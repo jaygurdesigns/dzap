@@ -1,0 +1,36 @@
+@media screen and (min-width:320px) and (max-width:960px) {
+  .mainNav {
+    display: none !important;
+  }
+
+  .mobileNavWrap {
+    display: block;
+    float: right;
+    margin-top: 10px;
+  }
+
+  .imagesWrap {
+    display: block !important;
+
+    .imageBlock {
+      float: none !important;
+      margin: 0 auto 20px;
+      width: 75% !important;
+    }
+  }
+}
+
+@media screen and (min-width:320px) and (max-width:480px) {
+  aside {
+    display: none; //I could do something fancier here, but I think you get the idea...
+  }
+
+  section {
+    border-bottom: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    float: none !important;
+    padding: 0 5px !important;
+    width: 95% !important;
+  }
+}

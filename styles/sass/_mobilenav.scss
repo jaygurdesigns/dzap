@@ -1,0 +1,42 @@
+
+.mobileNavWrap {
+  display: none;
+  position: relative;
+
+  /* -- Hamburger nav modification -- */
+    .c-hamburger--htx {
+      background-color: $white;
+    }
+    .c-hamburger:hover,
+    .c-hamburger:focus {
+      background-color: $white;
+    }
+    .c-hamburger--htx.is-active,
+    .c-hamburger--htx.is-active:hover,
+    .c-hamburger--htx.is-active:focus {
+      background-color: $light-blue;
+    }
+    /* -- END Hamburger nav modification -- */
+
+    .mobileNav {
+      background-color: $white;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      display: none;
+      max-width: 250px;
+      min-width: 160px;
+      position: absolute;
+      right: 0;
+      z-index: 1;
+
+      a {
+        color: $dark-gray;
+        display: block;
+        padding: 7px 16px;
+        text-decoration: none;
+      }
+      a:hover {
+        background-color: $light-blue;
+        color: $white;
+      }
+    }
+}

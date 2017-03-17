@@ -1,0 +1,50 @@
+/* ============ Variables ============= */
+
+/* -- font family -- */
+$base-font-family: Arial, sans-serif;
+$bold-font-family: "Arial Bold", sans-serif;
+
+/* -- font sizes -- */
+$base-em-font: 1.6em;
+$mid-em-font: 1.2em;
+$small-em-font: 1em;
+$smaller-em-font: 0.8em;
+$tiny-em-font: 0.5em;
+
+/* -- font weight -- */
+$bold-wt: 700;
+
+/* -- line height -- */
+$medium-line-ht: 1.8em;
+$base-line-ht: 1.4em;
+$mid-line-ht: 1.2em;
+$small-line-ht: 1em;
+$min-line-ht: .9em;
+
+/* -- colors -- */
+$white: #FFFFFF;
+$light-blue: #01A7E1;
+$darker-gray: #333333;
+$dark-gray: #666666;
+$mid-gray: #E8E9E9;
+$medium-gray: #BCC1C2;
+$light-gray: #E4E2E3;
+
+/* -- borders -- */
+
+/* ============= MIXINS ============== */
+/* -- box shadow -- */
+@mixin box-shadow ($horizOffset, $verOffset, $blur, $spread, $color) {
+  -webkit-box-shadow: $horizOffset $verOffset $blur $spread $color;
+  -moz-box-shadow: $horizOffset $verOffset $blur $spread $color;
+  o-box-shadow: $horizOffset $verOffset $blur $spread $color;
+  box-shadow: $horizOffset $verOffset $blur $spread $color;
+}
+
+/* -- rounded corners -- */
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+  -ms-border-radius: $radius;
+  border-radius: $radius;
+}
